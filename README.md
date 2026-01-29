@@ -190,7 +190,9 @@ To run tests inside a container:
       sh -c "pip install -r requirements-dev.txt && pytest -v"
 ```
 
-## Notes / Future Improvements
+## Notes & Intentional Trade-offs / Future Improvements
+
+The following items were intentionally left out to keep the solution focused on the challenge scope, but would be the next steps in a production system:
 
 - **External API Integration**: Replace the in-memory `get_flight_events` provider with an HTTP client that calls a real Flight Events API endpoint.
 - **Database Integration**: Add persistence layer to cache flight events or store search results.
